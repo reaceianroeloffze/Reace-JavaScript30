@@ -28,7 +28,10 @@ const allKeys = document.querySelectorAll('.key');
 allKeys.forEach(key => {
      key.addEventListener('transitionend', removeTransition)
      key.addEventListener('click', playSound);
-     key.addEventListener('touchstart', playSound);
+     key.addEventListener('touchstart', (event) => {
+          event.preventDefault();
+          playSound(event);
+     });
 });
 
 /* Add an event listener for the keydown event.

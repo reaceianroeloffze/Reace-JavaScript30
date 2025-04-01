@@ -52,24 +52,24 @@ kbd {
   pointer-events: none;
 }
 
-/*@media screen and (max-width: 1000px) {*/
+@media screen and (max-width: 1000px) {
 
-/*  .keys {*/
-/*    flex-direction: column;*/
-/*  }*/
+  .keys {
+    flex-direction: column;
+  }
 
-/*  .key {*/
-/*    width: 15rem;*/
-/*    height: 14rem;*/
-/*    background: rgba(0,0,0,0.7);*/
-/*  }*/
+  .key {
+    width: 15rem;
+    height: 14rem;
+    background: rgba(0,0,0,0.7);
+  }
 
-/*  .sound {*/
-/*    font-size: 2.5rem;*/
-/*  }*/
+  .sound {
+    font-size: 2.5rem;
+  }
 
-/*  kbd {*/
-/*    font-size: 8rem;*/
-/*  }*/
+  kbd {
+    font-size: 8rem;
+  }
 
-/*}*/
+}
