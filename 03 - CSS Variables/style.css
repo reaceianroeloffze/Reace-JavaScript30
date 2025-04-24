@@ -1,0 +1,105 @@
+:root {
+    --base: #FFC600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    border-radius: 5px;
+}
+
+.hl {
+    color: var(--base);
+}
+
+/*
+    misc styles, nothing to do with CSS variables
+  */
+
+body {
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.controls-cont {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.controls {
+    margin-bottom: 50px;
+}
+
+input {
+    width: 100px;
+}
+
+input.drag {
+    outline: none;
+    border: 2px solid var(--base);
+    box-shadow: 0 0 10px var(--base);
+    transform: scale(1.1);
+    transition: transform 0.1s ease;
+}
+
+.slider-value-display {
+    display: inline-block;
+    min-width: 60px;
+    font-size: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+    color: #ffc600;
+}
+
+@media screen and (max-width: 900px) {
+    .controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .controls label,
+    .controls input,
+    .slider-value-display {
+        display: block;
+        width: 90%;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 760px) and (max-width: 900px) {
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .controls label,
+    .controls input,
+    .slider-value-display {
+        font-size: 2.5rem;
+    }
+}
