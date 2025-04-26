@@ -1,4 +1,4 @@
-//
+// Handles what happens when the user moves the sliders/changes the colour
 
 export class SliderHandler {
     constructor(inputElem) {
